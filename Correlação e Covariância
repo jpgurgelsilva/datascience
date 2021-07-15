@@ -1,0 +1,40 @@
+x<-c(65,63,67,64,68,62,70,66,68,67)
+y<-c(68,66,68,65,69,66,68,65,71,67)
+
+plot(x,y)
+
+cor(x,y)
+
+#[1] 0.6368208
+
+cor(x,y,method = "spearman")
+
+#[1] 0.7143408
+
+cor(x,y, method = "kendall")
+
+#[1] 0.5304671
+
+cor.test(x,y)
+
+#p-value = 0.0477
+
+cor.test(x,y,method = "spearman")
+
+#p-value = 0.02029
+
+cor.test(x,y,method = "kendall")
+
+#p-value = 0.04245
+
+x<-c(1,2,3,4,5)
+y<-c(7,4,4,3,1)
+plot(x,y)
+
+cor(x,y)
+
+#[1] -0.9481224
+
+cor.test(x,y)
+
+# p-value = 0.01407 
